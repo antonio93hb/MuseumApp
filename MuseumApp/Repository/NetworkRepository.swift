@@ -9,7 +9,8 @@ struct NetworkRepository: DataRepository, NetworkInteractor {
     init(session: URLSession = .shared) {
         self.session = session
     }
-    
+    //MARK: Privados
+
     private func getAllObjectsId() async throws -> [Int] {
         return try await getJSON(request: .get(.getAllObjects), type: ArtObjectsDTO.self)
             .objectIDs ?? []
@@ -20,41 +21,40 @@ struct NetworkRepository: DataRepository, NetworkInteractor {
             .toArtObjectModel
     }
     
-    func getMaxArtObjects(max: Int) async throws -> [ArtObjectModel] {
-        let ids = try await getAllObjectsId().prefix(max)
-        
-        var result: [ArtObjectModel] = []
-        for id in ids {
-            result.append(try await getObject(id: id))
-        }
-        return result
-    }
-    
-    //MARK: Search
     private func searchIdsObjects(query: String) async throws -> [Int] {
 
         let result = try await getJSON(request: .get(.searchObjects(query: query)), type: ArtObjectsDTO.self)
-            
         guard let ids = result.objectIDs else {
-            print("AHB: No se encontraron resultados para \"\(query)\"")
             return []
         }
-        print("AHB: Devuelve este número de objetos: \(ids.count)")
-
         return ids
     }
-    
-    func getSearchArtObjects(max: Int, query: String) async throws -> [ArtObjectModel] {
-        let ids = try await searchIdsObjects(query: query).prefix(max)
-        guard !ids.isEmpty else { return [] }
-        var result: [ArtObjectModel] = []
+}
 
-        for id in ids {
+//MARK: Públicos
+
+extension NetworkRepository {
+    func getPaginatedArtObjects(offset: Int, limit: Int, query: String?) async throws -> [ArtObjectModel] {
+        
+        let ids: [Int]
+        var artObjects: [ArtObjectModel] = []
+        
+        if let query, !query.isEmpty {
+            ids = try await searchIdsObjects(query: query)
+        } else {
+            ids = try await getAllObjectsId()
+        }
+        
+        guard !ids.isEmpty else { return [] }
+        
+        let paginatedIDs = ids.dropFirst(offset).prefix(limit)
+        
+        
+        for id in paginatedIDs {
             if let object = try? await getObject(id: id) {
-                result.append(object)
+                artObjects.append(object)
             }
         }
-        return result
+        return artObjects
     }
-    
 }

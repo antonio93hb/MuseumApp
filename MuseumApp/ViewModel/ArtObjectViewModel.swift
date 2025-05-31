@@ -2,72 +2,98 @@
 
 import SwiftUI
 
+@MainActor
 @Observable
 final class ArtObjectViewModel {
     let network: DataRepository
     
+    // MARK: Objeto
     var artObjects: [ArtObjectModel] = []
     var artObject: ArtObjectModel?
     
+    // MARK: Alerta
     var isAlertPresented = false
     var errorMessage: String?
     
-    var isLoading = true
+    // MARK: Estado
     var isSearching = false
+    var isPaginating = false
 
+    // MARK: Búsqueda
     private var lastSearchText = ""
-    
     var text = "" {
         didSet {
             if text != lastSearchText {
                 lastSearchText = text
                 Task {
+                    print("AHB: Texto cambiado a \(text)")
                     await search()
                 }
             }
         }
     }
-    
     var searchTask: Task<Void, Error>?
     
+    // MARK: Paginación
+    var currentPage = 0
+    var pageSize = 10
+    var hasMorePages = true
+
+    // MARK: Init
     init(network: DataRepository = NetworkRepository()) {
         self.network = network
     }
     
-    func search() async {
+    // MARK: Métodos
+    private func search() async {
         if searchTask != nil {
             searchTask?.cancel()
             searchTask = nil
         }
         
         searchTask = Task {
-            try await Task.sleep(for: .seconds(0.4))
+            try await Task.sleep(for: .seconds(0.3))
             if !Task.isCancelled {
-                await getSearchArtObjects(max: 10)
+                await startSearch()
             }
         }
     }
+}
+
+extension ArtObjectViewModel {
     
-    func getMaxArtObjects(max: Int) async {
-        defer { isLoading = false }
-        do {
-            artObjects = try await network.getMaxArtObjects(max: max)
-        } catch {
-            errorMessage = error.localizedDescription
-            isAlertPresented = true
-        }
-    }
-    
-    func getSearchArtObjects(max: Int) async {
-        print("AHB: Se ha llamado")
+    func startSearch() async {
         isSearching = true
         defer { isSearching = false }
+
+        currentPage = 0
+        artObjects = []
+        
+        await loadNextPage()
+    }
+    
+    func loadNextPage() async {
+        guard !isPaginating, hasMorePages else { return }
+        
+        isPaginating = true
+        defer { isPaginating = false }
+        
+        let offset = currentPage * pageSize
+        
         do {
-            if text.isEmpty {
-                artObjects = try await network.getMaxArtObjects(max: max)
-            } else {
-                artObjects = try await network.getSearchArtObjects(max: max, query: text)
+            let newItems = try await network.getPaginatedArtObjects(
+                offset: offset,
+                limit: pageSize,
+                query: text
+            )
+            
+            if newItems.isEmpty {
+                hasMorePages = false
+                return
             }
+            
+            artObjects.append(contentsOf: newItems)
+            currentPage += 1
         } catch {
             errorMessage = error.localizedDescription
             isAlertPresented = true

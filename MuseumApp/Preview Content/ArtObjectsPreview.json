@@ -858,5 +858,865 @@
         "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
         "isTimelineWork": false,
         "GalleryNumber": ""
+    },
+    {
+        "objectID": 45734,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251130.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 1",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 1",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45734",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45735,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251131.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 2",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 2",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45735",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45736,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251132.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 3",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 3",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45736",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45737,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251133.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 4",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 4",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45737",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45738,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251134.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 5",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 5",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45738",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45739,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251135.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 6",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 6",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45739",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45740,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251136.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 7",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 7",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45740",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45741,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251137.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 8",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 8",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45741",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45742,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251138.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 9",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 9",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45742",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
+    },
+    {
+        "objectID": 45743,
+        "isHighlight": false,
+        "accessionNumber": "36.100.45",
+        "accessionYear": "1936",
+        "isPublicDomain": true,
+        "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP251139.jpg",
+        "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP251139.jpg",
+        "additionalImages": [
+            "https://images.metmuseum.org/CRDImages/as/original/DP251138.jpg",
+            "https://images.metmuseum.org/CRDImages/as/original/DP251120.jpg"
+        ],
+        "constituents": [
+            {
+                "constituentID": 11986,
+                "role": "Artist",
+                "name": "Kiyohara Yukinobu",
+                "constituentULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+                "constituentWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+                "gender": "Female"
+            }
+        ],
+        "department": "Asian Art",
+        "objectName": "Hanging scroll",
+        "title": "Sample Artwork 10",
+        "culture": "Japan",
+        "period": "Edo period (1615\u20131868)",
+        "dynasty": "",
+        "reign": "",
+        "portfolio": "",
+        "artistRole": "Artist",
+        "artistPrefix": "",
+        "artistDisplayName": "Artist 10",
+        "artistDisplayBio": "Japanese, 1643\u20131682",
+        "artistSuffix": "",
+        "artistAlphaSort": "Kiyohara Yukinobu",
+        "artistNationality": "Japanese",
+        "artistBeginDate": "1643",
+        "artistEndDate": "1682",
+        "artistGender": "Female",
+        "artistWikidata_URL": "https://www.wikidata.org/wiki/Q11560527",
+        "artistULAN_URL": "http://vocab.getty.edu/page/ulan/500034433",
+        "objectDate": "late 17th century",
+        "objectBeginDate": 1667,
+        "objectEndDate": 1682,
+        "medium": "Hanging scroll; ink and color on silk",
+        "dimensions": "46 5/8 x 18 3/4 in. (118.4 x 47.6 cm)",
+        "measurements": [
+            {
+                "elementName": "Overall",
+                "elementDescription": null,
+                "elementMeasurements": {
+                    "Height": 118.4,
+                    "Width": 47.6
+                }
+            }
+        ],
+        "creditLine": "The Howard Mansfield Collection, Purchase, Rogers Fund, 1936",
+        "geographyType": "",
+        "city": "",
+        "state": "",
+        "county": "",
+        "country": "",
+        "region": "",
+        "subregion": "",
+        "locale": "",
+        "locus": "",
+        "excavation": "",
+        "river": "",
+        "classification": "Paintings",
+        "rightsAndReproduction": "",
+        "linkResource": "",
+        "metadataDate": "2020-09-14T12:26:37.48Z",
+        "repository": "Metropolitan Museum of Art, New York, NY",
+        "objectURL": "https://www.metmuseum.org/art/collection/search/45743",
+        "tags": [
+            {
+                "term": "Birds",
+                "AAT_URL": "http://vocab.getty.edu/page/aat/300266506",
+                "Wikidata_URL": "https://www.wikidata.org/wiki/Q5113"
+            }
+        ],
+        "objectWikidata_URL": "https://www.wikidata.org/wiki/Q29910832",
+        "isTimelineWork": false,
+        "GalleryNumber": ""
     }
 ]

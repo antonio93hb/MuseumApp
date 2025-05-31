@@ -8,15 +8,23 @@
 import Foundation
 
 struct NetworkTest: DataRepository {
-    func getSearchArtObjects(max: Int, query: String) async throws -> [ArtObjectModel] {
-        try getJSON(fileName: "ArtObjectsPreview", type: [ArtObjectDetailDTO].self)
-            .filter({$0.title.lowercased().contains(query.lowercased())})
+    func getPaginatedArtObjects(offset: Int, limit: Int, query: String?) async throws -> [ArtObjectModel] {
+        // Cargar todos los datos desde el JSON local
+        let allObjects = try getJSON(fileName: "ArtObjectsPreview", type: [ArtObjectDetailDTO].self)
             .compactMap(\.toArtObjectModel)
-    }
-    
-    func getMaxArtObjects(max: Int) async throws -> [ArtObjectModel] {
-        try getJSON(fileName: "ArtObjectsPreview", type: [ArtObjectDetailDTO].self)
-            .compactMap(\.toArtObjectModel)
+        
+        // Filtrado si hay texto de búsqueda
+        let filtered = if let query = query, !query.isEmpty {
+            allObjects.filter { $0.title.lowercased().contains(query.lowercased()) }
+        } else {
+            allObjects
+        }
+        
+        // Simulación de paginación
+        let paginated = filtered.dropFirst(offset).prefix(limit)
+        print("AHB: Filtrando con query: \(query ?? "nil")")
+        print("AHB: Resultados: \(filtered.count)")
+        return Array(paginated)
     }
     
     private func getJSON<JSON>(fileName: String, type: JSON.Type) throws -> JSON where JSON: Decodable {
@@ -24,5 +32,4 @@ struct NetworkTest: DataRepository {
         let data = try Data(contentsOf: url)
         return try JSONDecoder().decode(JSON.self, from: data)
     }
-    
 }

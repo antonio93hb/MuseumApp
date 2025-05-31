@@ -14,18 +14,21 @@ struct ArtObjectsListView: View {
     var body: some View {
         NavigationStack {
             ZStack{
-                if model.isLoading {
-                    ProgressView("Cargando obras...")
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                } else {
                     List {
-                        if model.artObjects.isEmpty && !model.text.isEmpty {
+                        if model.artObjects.isEmpty && !model.text.isEmpty && !model.isSearching && !model.isPaginating {
                             Text("No se encontraron resultados para \"\(model.text)\"")
                                 .foregroundColor(.secondary)
                                 .padding()
                         } else {
                             ForEach(model.artObjects) { artObject in
                                 ArtObjectRow(artObject: artObject)
+                                    .onAppear {
+                                        if artObject == model.artObjects.last {
+                                            Task {
+                                                await model.loadNextPage()
+                                            }
+                                        }
+                                    }
                             }
                         }
                     }
@@ -34,11 +37,10 @@ struct ArtObjectsListView: View {
                         text: $model.text,
                         prompt: "Buscar obra"
                     )
-                }
                 
-                if model.isSearching {
+                if model.isSearching || model.isPaginating {
                     VStack {
-                        ProgressView("Buscando obras...")
+                        ProgressView("Cargando obras...")
                             .padding()
                             .background(.ultraThinMaterial)
                             .cornerRadius(12)
@@ -48,7 +50,7 @@ struct ArtObjectsListView: View {
                 }
             }
             .task {
-                await model.getMaxArtObjects(max: 50)
+                await model.startSearch()
             }
             .alert("App Service Error", isPresented: $model.isAlertPresented) {} message: {
                 Text(model.errorMessage ?? "")
