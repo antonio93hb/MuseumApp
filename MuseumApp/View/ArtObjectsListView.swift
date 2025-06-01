@@ -14,13 +14,16 @@ struct ArtObjectsListView: View {
     var body: some View {
         NavigationStack {
             ZStack{
-                    List {
-                        if model.artObjects.isEmpty && !model.text.isEmpty && !model.isSearching && !model.isPaginating {
-                            Text("No se encontraron resultados para \"\(model.text)\"")
-                                .foregroundColor(.secondary)
-                                .padding()
-                        } else {
-                            ForEach(model.artObjects) { artObject in
+                List {
+                    if model.artObjects.isEmpty && !model.text.isEmpty && !model.isSearching && !model.isPaginating {
+                        Text("No se encontraron resultados para \"\(model.text)\"")
+                            .foregroundColor(.secondary)
+                            .padding()
+                    } else {
+                        ForEach(model.artObjects) { artObject in
+                            NavigationLink(
+                                destination: ArtObjectDetailView(artObject: artObject)
+                            ) {
                                 ArtObjectRow(artObject: artObject)
                                     .onAppear {
                                         if artObject == model.artObjects.last {
@@ -32,11 +35,12 @@ struct ArtObjectsListView: View {
                             }
                         }
                     }
-                    .navigationTitle("Art objects")
-                    .searchable(
-                        text: $model.text,
-                        prompt: "Buscar obra"
-                    )
+                }
+                .navigationTitle("Art objects")
+                .searchable(
+                    text: $model.text,
+                    prompt: "Buscar obra"
+                )
                 
                 if model.isSearching || model.isPaginating {
                     VStack {
