@@ -26,6 +26,14 @@ struct NetworkTest: DataRepository {
         print("AHB: Resultados: \(filtered.count)")
         return Array(paginated)
     }
+    func getRandomArtObject() async throws -> [ArtObjectModel] {
+        let allObjects = try getJSON(fileName: "ArtObjectsPreview", type: [ArtObjectDetailDTO].self)
+            .compactMap(\.toArtObjectModel)
+            .filter { !$0.imageUrl.isEmpty } // solo con imagen
+
+        // Devolver hasta 5 aleatorios con imagen
+        return Array(allObjects.shuffled().prefix(5))
+    }
     
     private func getJSON<JSON>(fileName: String, type: JSON.Type) throws -> JSON where JSON: Decodable {
         let url = Bundle.main.url(forResource: fileName, withExtension: "json")!

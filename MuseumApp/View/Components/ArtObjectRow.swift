@@ -26,6 +26,9 @@ struct ArtObjectRow: View {
             }
             Spacer()
             ImageView(artObject: artObject)
+                .frame(width: 100, height: 100)
+                .clipped()
+                .cornerRadius(8)
         }
     }
 }

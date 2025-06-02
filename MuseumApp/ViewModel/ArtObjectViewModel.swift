@@ -100,3 +100,14 @@ extension ArtObjectViewModel {
         }
     }
 }
+extension ArtObjectViewModel {
+    func getRandomArtObject() async {
+        do {
+            let randomArtObject = try await network.getRandomArtObject()
+            self.artObjects = randomArtObject
+        } catch {
+            errorMessage = error.localizedDescription
+            isAlertPresented = true
+        }
+    }
+}

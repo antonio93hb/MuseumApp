@@ -35,7 +35,6 @@ struct NetworkRepository: DataRepository, NetworkInteractor {
 
 extension NetworkRepository {
     func getPaginatedArtObjects(offset: Int, limit: Int, query: String?) async throws -> [ArtObjectModel] {
-        
         let ids: [Int]
         var artObjects: [ArtObjectModel] = []
         
@@ -55,6 +54,20 @@ extension NetworkRepository {
                 artObjects.append(object)
             }
         }
+        return artObjects
+    }
+    
+    func getRandomArtObject() async throws -> [ArtObjectModel] {
+        var artObjects: [ArtObjectModel] = []
+        
+        while artObjects.count < 5 {
+            let randomID = Int.random(in: 1...100_000)
+            
+            if let object = try? await getObject(id: randomID), !object.imageUrl.isEmpty {
+                artObjects.append(object)
+            }
+        }
+        
         return artObjects
     }
 }

@@ -11,7 +11,8 @@ import SwiftUI
 struct MuseumAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ArtObjectsListView(model: .init())
+//            ArtObjectsListView(model: .init())
+            WellcomeView()
         }
     }
 }

@@ -18,7 +18,7 @@ struct ImageView: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 100, height: 100)
+                    //.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .shadow(color: .black.opacity(0.4), radius: 4, x: 4, y: 4)
             } placeholder: {
@@ -28,7 +28,7 @@ struct ImageView: View {
             Image(systemName: "photo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
+                //.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 .shadow(color: .black.opacity(0.4), radius: 4, x: 4, y: 4)
         }
