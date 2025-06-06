@@ -1,6 +1,7 @@
 
 
 import SwiftUI
+import CoreImage.CIFilterBuiltins
 
 @MainActor
 @Observable

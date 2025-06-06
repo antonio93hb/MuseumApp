@@ -48,7 +48,6 @@ extension NetworkRepository {
         
         let paginatedIDs = ids.dropFirst(offset).prefix(limit)
         
-        
         for id in paginatedIDs {
             if let object = try? await getObject(id: id) {
                 artObjects.append(object)
@@ -67,7 +66,6 @@ extension NetworkRepository {
                 artObjects.append(object)
             }
         }
-        
         return artObjects
     }
 }

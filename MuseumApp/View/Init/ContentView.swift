@@ -17,6 +17,12 @@ struct ContentView: View {
             Tab("List", systemImage: "list.bullet") {
                 ArtObjectsListView(model: .init())
             }
+            Tab("Cards", systemImage: "person.text.rectangle") {
+                CardsView(model: .init())
+            }
+            Tab("Visit", systemImage: "map") {
+                VisitView()
+            }
         }
         .tabViewStyle(.sidebarAdaptable)
     }
@@ -24,4 +30,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(RootManager())
 }

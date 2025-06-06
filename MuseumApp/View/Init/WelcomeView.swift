@@ -8,13 +8,11 @@
 
 import SwiftUI
 
-struct WellcomeView: View {
-    @State private var showContentView = false
+struct WelcomeView: View {
+    @Environment(RootManager.self) var rootManager
     
     var body: some View {
-        if showContentView {
-            ContentView()
-        } else {
+
             VStack {
                 Image(systemName: "building.columns")
                     .resizable()
@@ -35,9 +33,9 @@ struct WellcomeView: View {
                     .padding()
                 
                 Button{
-                    showContentView.toggle()
+                    rootManager.currentView = .login
                 } label: {
-                    Text("Empezar")
+                    Text("Login")
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -53,10 +51,10 @@ struct WellcomeView: View {
                     .foregroundColor(.gray)
                     .padding()
             }
-        }
     }
 }
 
 #Preview {
-    WellcomeView()
+    WelcomeView()
+        .environment(RootManager())
 }

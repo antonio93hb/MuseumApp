@@ -43,7 +43,6 @@ struct ArtOfTheDayView: View {
                         }
                     }
                     .padding(.horizontal)
-                    
                 }
                 
                 // Cita
@@ -53,7 +52,6 @@ struct ArtOfTheDayView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                     .frame(maxWidth: .infinity)
-                
                 
                 // Botón "Hazte socio"
                 Button(action: {
@@ -76,7 +74,7 @@ struct ArtOfTheDayView: View {
                 await model.getRandomArtObject()
             }
             .navigationDestination(isPresented: $goToFormView) {
-                FormView()
+                FormView(formModel: .init())
             }
         }
     }
