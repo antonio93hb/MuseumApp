@@ -3,14 +3,14 @@
 import Foundation
 
 struct NetworkRepository: DataRepository, NetworkInteractor {
-
+    
     let session: URLSession
     
     init(session: URLSession = .shared) {
         self.session = session
     }
     //MARK: Privados
-
+    
     private func getAllObjectsId() async throws -> [Int] {
         return try await getJSON(request: .get(.getAllObjects), type: ArtObjectsDTO.self)
             .objectIDs ?? []
@@ -22,7 +22,7 @@ struct NetworkRepository: DataRepository, NetworkInteractor {
     }
     
     private func searchIdsObjects(query: String) async throws -> [Int] {
-
+        
         let result = try await getJSON(request: .get(.searchObjects(query: query)), type: ArtObjectsDTO.self)
         guard let ids = result.objectIDs else {
             return []
@@ -35,24 +35,51 @@ struct NetworkRepository: DataRepository, NetworkInteractor {
 
 extension NetworkRepository {
     func getPaginatedArtObjects(offset: Int, limit: Int, query: String?) async throws -> [ArtObjectModel] {
-        let ids: [Int]
+        
         var artObjects: [ArtObjectModel] = []
         
         if let query, !query.isEmpty {
-            ids = try await searchIdsObjects(query: query)
-        } else {
-            ids = try await getAllObjectsId()
+            let ids = try await searchIdsObjects(query: query)
+            let paginatedIDs = ids.dropFirst(offset).prefix(limit)
+            
+            try await withThrowingTaskGroup(of: ArtObjectModel?.self) { group in
+                
+                for id in paginatedIDs {
+                    group.addTask {
+                        try? await getObject(id: id)
+                    }
+                }
+                
+                for try await object in group {
+                    if let object = object {
+                        artObjects.append(object)
+                    }
+                }
+            }
+            return artObjects
         }
         
-        guard !ids.isEmpty else { return [] }
+        if ArtObjectsCache.shared.ids.isEmpty {
+            let ids = try await getAllObjectsId()
+            ArtObjectsCache.shared.store(ids: ids)
+        }
+
+        let paginatedIDs = ArtObjectsCache.shared.getIds(count: limit)
         
-        let paginatedIDs = ids.dropFirst(offset).prefix(limit)
-        
-        for id in paginatedIDs {
-            if let object = try? await getObject(id: id) {
-                artObjects.append(object)
+        try await withThrowingTaskGroup(of: ArtObjectModel?.self) { group in
+            for id in paginatedIDs {
+                group.addTask {
+                    try? await self.getObject(id: id)
+                }
+            }
+            
+            for try await object in group {
+                if let object {
+                    artObjects.append(object)
+                }
             }
         }
+        
         return artObjects
     }
     

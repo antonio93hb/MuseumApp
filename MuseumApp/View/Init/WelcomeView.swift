@@ -10,6 +10,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     @Environment(RootManager.self) var rootManager
+    @State var model: ArtObjectViewModel
     
     var body: some View {
 
@@ -51,10 +52,15 @@ struct WelcomeView: View {
                     .foregroundColor(.gray)
                     .padding()
             }
+            .onAppear {
+                Task {
+                    await model.loadNextPage()
+                }
+            }
     }
 }
 
 #Preview {
-    WelcomeView()
+    WelcomeView(model: .init(network: NetworkTest()))
         .environment(RootManager())
 }

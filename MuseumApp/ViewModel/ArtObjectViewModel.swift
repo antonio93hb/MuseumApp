@@ -27,7 +27,6 @@ final class ArtObjectViewModel {
             if text != lastSearchText {
                 lastSearchText = text
                 Task {
-                    print("AHB: Texto cambiado a \(text)")
                     await search()
                 }
             }
@@ -101,6 +100,7 @@ extension ArtObjectViewModel {
         }
     }
 }
+
 extension ArtObjectViewModel {
     func getRandomArtObject() async {
         do {

@@ -22,8 +22,6 @@ struct NetworkTest: DataRepository {
         
         // Simulación de paginación
         let paginated = filtered.dropFirst(offset).prefix(limit)
-        print("AHB: Filtrando con query: \(query ?? "nil")")
-        print("AHB: Resultados: \(filtered.count)")
         return Array(paginated)
     }
     func getRandomArtObject() async throws -> [ArtObjectModel] {

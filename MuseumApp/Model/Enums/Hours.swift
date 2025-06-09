@@ -5,7 +5,7 @@
 //  Created by Antonio Hernández Barbadilla on 5/6/25.
 //
 
-import SwiftUI
+import Foundation
 
 enum Hours: String, CaseIterable, Identifiable {
     
@@ -20,18 +20,3 @@ enum Hours: String, CaseIterable, Identifiable {
     
     var id: Self { self }
 }
-
-struct HourButton: ViewModifier {
-    
-    func body(content: Content) -> some View {
-        content
-            .padding()
-            .background(Color.gray.opacity(0.2))
-            .cornerRadius(10)
-    }
-    
-}
-
-//#Preview {
-//    HourButton()
-//}

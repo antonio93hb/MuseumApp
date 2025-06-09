@@ -36,19 +36,3 @@ final class MembershipCardDB {
         }
     }
 }
-
-enum MembershipType: String, Codable, CaseIterable {
-    case adult = "Adult"
-    case student = "Student"
-    case senior = "Senior"
-    case junior = "Junior"
-    
-    var color: Color {
-        switch self {
-        case .adult: return .blue
-        case .student: return .yellow
-        case .senior: return .orange
-        case .junior: return .mint
-        }
-    }
-}

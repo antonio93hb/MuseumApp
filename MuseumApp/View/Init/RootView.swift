@@ -13,7 +13,7 @@ struct RootView: View {
 
     var body: some View {
         switch rootManager.currentView {
-        case .welcome: WelcomeView()
+        case .welcome: WelcomeView(model: .init())
         case .login: LoginView()
         case .content: ContentView()
         }
