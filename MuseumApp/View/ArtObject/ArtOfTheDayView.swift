@@ -10,7 +10,7 @@ import SwiftUI
 struct ArtOfTheDayView: View {
     
     @State var model: ArtObjectViewModel
-    @State private var goToFormView = false
+//    @State private var goToFormView = false
     
     var body: some View {
         NavigationStack {
@@ -54,28 +54,28 @@ struct ArtOfTheDayView: View {
                     .frame(maxWidth: .infinity)
                 
                 // Botón "Hazte socio"
-                Button(action: {
-                    goToFormView = true
-                }) {
-                    Text("Hazte socio")
-                        .font(.headline)
-                        .padding(.horizontal, 24)
-                        .padding(.vertical, 10)
-                        .background(
-                            Capsule()
-                                .stroke(LinearGradient(colors: [.blue, .purple], startPoint: .leading, endPoint: .trailing), lineWidth: 2)
-                        )
-                }
-                .padding(.top, 10)
-                .frame(maxWidth: .infinity)
+//                Button(action: {
+//                    goToFormView = true
+//                }) {
+//                    Text("Hazte socio")
+//                        .font(.headline)
+//                        .padding(.horizontal, 24)
+//                        .padding(.vertical, 10)
+//                        .background(
+//                            Capsule()
+//                                .stroke(LinearGradient(colors: [.blue, .purple], startPoint: .leading, endPoint: .trailing), lineWidth: 2)
+//                        )
+//                }
+//                .padding(.top, 10)
+//                .frame(maxWidth: .infinity)
                 
             }
             .task {
                 await model.getRandomArtObject()
             }
-            .navigationDestination(isPresented: $goToFormView) {
-                FormView(formModel: .init())
-            }
+//            .navigationDestination(isPresented: $goToFormView) {
+//                FormView(formModel: .init())
+//            }
         }
     }
 }

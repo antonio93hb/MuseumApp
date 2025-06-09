@@ -10,7 +10,9 @@ import CoreImage.CIFilterBuiltins
 
 struct FormView: View {
     @State var formModel: CardsViewModel
+    @State private var showSuccessMessage = false
     @Environment(\.modelContext) private var context
+    @Environment(\.dismiss) private var dismiss
     var body: some View {
         Form {
             Section {
@@ -55,9 +57,15 @@ struct FormView: View {
             }
             Button("Become a member now") {
                 formModel.saveToDatabase(context: context)
+                showSuccessMessage = true
             }
             .disabled(!formModel.isFormValid)
             .frame(maxWidth: .infinity, alignment: .center)
+        }
+        .alert("Card saved successfully!", isPresented: $showSuccessMessage) {
+            Button("OK", role: .cancel) {
+                dismiss()
+            }
         }
     }
 }

@@ -64,7 +64,8 @@ extension NetworkRepository {
             ArtObjectsCache.shared.store(ids: ids)
         }
 
-        let paginatedIDs = ArtObjectsCache.shared.getIds(count: limit)
+        let getFirsts = offset == 0
+        let paginatedIDs = ArtObjectsCache.shared.getIds(count: limit, getFirsts: getFirsts)
         
         try await withThrowingTaskGroup(of: ArtObjectModel?.self) { group in
             for id in paginatedIDs {
@@ -79,7 +80,6 @@ extension NetworkRepository {
                 }
             }
         }
-        
         return artObjects
     }
     

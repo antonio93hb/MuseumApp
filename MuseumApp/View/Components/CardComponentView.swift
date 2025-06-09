@@ -31,6 +31,7 @@ struct CardComponentView: View {
                 .padding()
 
         }
+        .frame(maxWidth: .infinity)
         .padding()
         .background(card.membership.color.opacity(0.15))
         .cornerRadius(12)

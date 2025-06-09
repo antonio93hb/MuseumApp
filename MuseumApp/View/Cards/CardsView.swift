@@ -13,24 +13,42 @@ struct CardsView: View {
     @State var model: CardsViewModel
     @Query private var storedCards: [MembershipCardDB]
     
+    @State private var isPresentingForm = false
+    
     // Esto solo se usa en preview
     var previewCards: [MembershipCardDB]? = nil
 
     var body: some View {
         let cards = previewCards ?? storedCards
         VStack {
-            Text("Cards")
             List {
-                ForEach(cards) {card in
-                    CardComponentView(card: card)
+                
+                Section {
+                    Button {
+                                isPresentingForm = true
+                            } label: {
+                                HStack {
+                                    Image(systemName: "plus.circle")
+                                    Text("Add new card")
+                                }
+                            }
                 }
-                .onDelete { indexSet in
-                    for index in indexSet {
-                        let itemToDelete = cards[index]
-                        context.delete(itemToDelete)
+                
+                Section {
+                    ForEach(cards) {card in
+                        CardComponentView(card: card)
+                    }
+                    .onDelete { indexSet in
+                        for index in indexSet {
+                            let itemToDelete = cards[index]
+                            context.delete(itemToDelete)
+                        }
                     }
                 }
             }
+        }
+        .sheet(isPresented: $isPresentingForm) {
+            FormView(formModel: CardsViewModel())
         }
     }
 }

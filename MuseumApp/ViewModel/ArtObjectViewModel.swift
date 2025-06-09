@@ -87,17 +87,22 @@ extension ArtObjectViewModel {
                 query: text
             )
             
+            let uniqueItems = newItems.filter { newItem in
+                !artObjects.contains(where: { $0.id == newItem.id })
+            }
+            
             if newItems.isEmpty {
                 hasMorePages = false
                 return
             }
             
-            artObjects.append(contentsOf: newItems)
+            artObjects.append(contentsOf: uniqueItems)
             currentPage += 1
         } catch {
             errorMessage = error.localizedDescription
             isAlertPresented = true
         }
+        print("AHB: Page loaded: \(currentPage)")
     }
 }
 
