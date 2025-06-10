@@ -24,6 +24,7 @@ struct ContentView: View {
                 VisitView()
             }
         }
+        .tint(.red)
         .tabViewStyle(.sidebarAdaptable)
     }
 }

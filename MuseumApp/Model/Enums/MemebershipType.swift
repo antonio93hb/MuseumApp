@@ -15,9 +15,9 @@ enum MembershipType: String, Codable, CaseIterable {
     
     var color: Color {
         switch self {
-        case .adult: return .blue
+        case .adult: return .red
         case .student: return .yellow
-        case .senior: return .orange
+        case .senior: return .blue
         case .junior: return .mint
         }
     }

@@ -19,9 +19,13 @@ struct LoginView: View {
                 .scaledToFit()
                 .symbolEffect(.breathe, isActive: animate)
                 .frame(width: 120, height: 120)
+                .foregroundStyle(.red)
+                .padding()
 
-            Text("Bienvenido")
+            Text("Loading...")
                 .font(.title)
+                .fontWeight(.bold)
+                .foregroundStyle(.secondary)
                 .padding()
         }
         .onAppear {

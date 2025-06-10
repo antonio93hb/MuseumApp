@@ -22,7 +22,6 @@ struct CardsView: View {
         let cards = previewCards ?? storedCards
         VStack {
             List {
-                
                 Section {
                     Button {
                                 isPresentingForm = true
@@ -44,6 +43,7 @@ struct CardsView: View {
                             context.delete(itemToDelete)
                         }
                     }
+                    .padding(.vertical, 25)
                 }
             }
         }

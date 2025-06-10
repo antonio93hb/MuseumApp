@@ -15,19 +15,19 @@ struct WelcomeView: View {
     var body: some View {
 
             VStack {
-                Image(systemName: "building.columns")
+                Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200)
                     .bold()
                     .padding()
                 
-                Text("Bienvenido al MET")
+                Text("Welcome to the MET")
                     .font(.largeTitle)
                     .foregroundStyle(.primary)
                     .bold()
                 
-                Text("Explora arte, historia y cultura del MET. Descubre obras únicas, artistas, épocas y mucho más.")
+                Text("Explore art, history, and culture at the MET. Discover unique artworks, artists, eras, and much more.")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
@@ -40,14 +40,14 @@ struct WelcomeView: View {
                         .font(.headline)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.blue)
+                        .background(Color.red)
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .padding(.top,80)
                         .padding()
                 }
                 
-                Text("Desarrollado con la API del MET")
+                Text("*Developed with the **MET API***")
                     .font(.footnote)
                     .foregroundColor(.gray)
                     .padding()

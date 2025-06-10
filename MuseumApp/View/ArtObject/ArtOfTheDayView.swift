@@ -13,8 +13,18 @@ struct ArtOfTheDayView: View {
 //    @State private var goToFormView = false
     
     var body: some View {
+
         NavigationStack {
-            VStack(alignment: .leading, spacing: 16) {
+            Image("logo")
+                .resizable()
+                .frame(width: 200, height: 200)
+                .clipShape(RoundedRectangle(cornerRadius: 24))
+                .shadow(radius: 10)
+                .padding()
+
+            
+            VStack(alignment: .leading) {
+                
                 // Título
                 Text("Obras del día")
                     .font(.title)
@@ -52,30 +62,11 @@ struct ArtOfTheDayView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                     .frame(maxWidth: .infinity)
-                
-                // Botón "Hazte socio"
-//                Button(action: {
-//                    goToFormView = true
-//                }) {
-//                    Text("Hazte socio")
-//                        .font(.headline)
-//                        .padding(.horizontal, 24)
-//                        .padding(.vertical, 10)
-//                        .background(
-//                            Capsule()
-//                                .stroke(LinearGradient(colors: [.blue, .purple], startPoint: .leading, endPoint: .trailing), lineWidth: 2)
-//                        )
-//                }
-//                .padding(.top, 10)
-//                .frame(maxWidth: .infinity)
-                
+
             }
             .task {
                 await model.getRandomArtObject()
             }
-//            .navigationDestination(isPresented: $goToFormView) {
-//                FormView(formModel: .init())
-//            }
         }
     }
 }
